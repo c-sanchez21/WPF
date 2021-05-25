@@ -1,0 +1,19 @@
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.exe
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.dll
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csprojAssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.dll
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.genruntimeconfig.cache
