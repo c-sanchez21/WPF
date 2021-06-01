@@ -1,0 +1,37 @@
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.exe
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.dll
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.dll
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.genruntimeconfig.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.exe
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.dll
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF Text.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.csprojAssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.dll
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF Text\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF Text.genruntimeconfig.cache

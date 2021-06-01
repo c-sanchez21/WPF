@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_Text.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Text"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="210">
+    <StackPanel>
+        <Label Content="_String:" Target="{Binding ElementName=txtString}"/>
+        <!-- TODO: Scrollviewer not working for some reason -->
+        <ScrollViewer IsEnabled="True">
+            <TextBox Name="txtString" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="en-US"/>
+        </ScrollViewer>
+        <Button Name="btnClear" Click="btnClear_Click">Clear</Button>
+        <TextBlock Foreground="Red" Margin="10" TextTrimming="CharacterEllipsis"> <Span> <Bold>TextBlock no Wrapping </Bold> <Italic> ABCDEFGHIJKLMNOPQRSTUVWXYZ </Italic></Span></TextBlock>
+        <TextBlock Foreground="Green" Margin="10" TextWrapping="Wrap"> <Span> <Bold>Textblock with Wrapping </Bold> <Italic>ABCDEFGHIJKLMNOPQRSTUVWXYZ </Italic></Span></TextBlock>
+    </StackPanel>
+</Window>

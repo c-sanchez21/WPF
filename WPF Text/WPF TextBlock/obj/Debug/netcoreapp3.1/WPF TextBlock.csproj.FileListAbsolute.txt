@@ -1,0 +1,19 @@
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF TextBlock.exe
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF TextBlock.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF TextBlock.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF TextBlock.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF TextBlock.dll
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\bin\Debug\netcoreapp3.1\WPF TextBlock.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.csprojAssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.dll
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF TextBlock\WPF TextBlock\obj\Debug\netcoreapp3.1\WPF TextBlock.genruntimeconfig.cache
