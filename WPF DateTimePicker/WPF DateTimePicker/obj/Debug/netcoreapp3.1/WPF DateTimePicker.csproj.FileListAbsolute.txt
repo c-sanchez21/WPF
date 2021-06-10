@@ -1,0 +1,19 @@
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\bin\Debug\netcoreapp3.1\WPF DateTimePicker.exe
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\bin\Debug\netcoreapp3.1\WPF DateTimePicker.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\bin\Debug\netcoreapp3.1\WPF DateTimePicker.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\bin\Debug\netcoreapp3.1\WPF DateTimePicker.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\bin\Debug\netcoreapp3.1\WPF DateTimePicker.dll
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\bin\Debug\netcoreapp3.1\WPF DateTimePicker.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.csproj.AssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.dll
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.genruntimeconfig.cache
