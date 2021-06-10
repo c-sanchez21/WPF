@@ -1,0 +1,20 @@
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\bin\Debug\netcoreapp3.1\WPF Checkboxes.exe
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\bin\Debug\netcoreapp3.1\WPF Checkboxes.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\bin\Debug\netcoreapp3.1\WPF Checkboxes.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\bin\Debug\netcoreapp3.1\WPF Checkboxes.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\bin\Debug\netcoreapp3.1\WPF Checkboxes.dll
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\bin\Debug\netcoreapp3.1\WPF Checkboxes.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.csproj.AssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.dll
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF Checkboxes\WPF Checkboxes\obj\Debug\netcoreapp3.1\WPF Checkboxes.genruntimeconfig.cache
