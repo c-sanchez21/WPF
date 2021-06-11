@@ -19,10 +19,16 @@
     </Window.Background>
     <StackPanel>
         <GroupBox Header="DatePicker">
-            <DatePicker SelectedDate="{Binding Path=MyDate, Mode=TwoWay}"/>
+            <DatePicker SelectedDate="{Binding Path=MyDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </GroupBox>
-        <GroupBox Header="DatePickerTextBox">
-            <DatePickerTextBox />
+        <GroupBox Header="DateTimePicker">
+            <StackPanel Orientation="Horizontal">
+                <!-- Experiment with creating DateTime Picker Control-->
+                <!-- Modifying time resets the date -->
+                <DatePicker x:Name="dtpDate" SelectedDate="{Binding Path=MyDate, Mode=TwoWay}"/>
+                <TextBox x:Name="txtTime" Width="80" Text="{Binding Path=SelectedDate, 
+                        StringFormat=HH:mm:ss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
         </GroupBox>
         <GroupBox Header="Calendar">
             <Calendar x:Name="myCalender" SelectedDate="{Binding Path=MyDate, Mode=TwoWay}"
