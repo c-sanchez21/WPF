@@ -17,3 +17,6 @@ C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\
 C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.dll
 C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.pdb
 C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\WPF DateTimePicker.genruntimeconfig.cache
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\DateTimePicker.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\DateTimePicker.baml

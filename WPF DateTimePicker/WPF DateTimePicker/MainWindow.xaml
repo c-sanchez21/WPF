@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_DateTimePicker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="200" Foreground="White" SizeToContent="WidthAndHeight">
+        Title="MainWindow" Height="300" Width="200" Foreground="White" SizeToContent="WidthAndHeight" Name="this">
     <Window.Resources>
         <Style TargetType="{x:Type Label}">
             <Setter Property="Foreground" Value="White"/>
@@ -21,14 +21,19 @@
         <GroupBox Header="DatePicker">
             <DatePicker SelectedDate="{Binding Path=MyDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </GroupBox>
-        <GroupBox Header="DateTimePicker">
+        <GroupBox Header="DateTimePicker - Calendar + Text">
             <StackPanel Orientation="Horizontal">
                 <!-- Experiment with creating DateTime Picker Control-->
                 <!-- Modifying time resets the date -->
                 <DatePicker x:Name="dtpDate" SelectedDate="{Binding Path=MyDate, Mode=TwoWay}"/>
-                <TextBox x:Name="txtTime" Width="80" Text="{Binding Path=SelectedDate, 
+                <TextBox x:Name="txtTime" Width="80" Text="{Binding Path=MyDate, 
                         StringFormat=HH:mm:ss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Custom - Usercontrol">
+            <!-- <local:DateTimePicker SelectedDate="{Binding Path=MyDate}"/> -->
+            <local:DateTimePicker SelectedDate="{Binding ElementName=this, Path=MyDate,
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </GroupBox>
         <GroupBox Header="Calendar">
             <Calendar x:Name="myCalender" SelectedDate="{Binding Path=MyDate, Mode=TwoWay}"
