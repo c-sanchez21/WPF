@@ -127,18 +127,81 @@ namespace WPF_DateTimePicker
                     SelectedDate = AddToDate(idx, -1);//Decrement
                     SelDateComponent(idx);
                     break;
+                case Key.Left:
+                    MoveLeft(idx);
+                    break;
+                case Key.Tab:
+                case Key.Right:
+                    MoveRight(idx);
+                    break;
+                //In case user inputs a digit
+                case Key.D0:
+                case Key.D1:
+                case Key.D2:
+                case Key.D3:
+                case Key.D4:
+                case Key.D5:
+                case Key.D6:
+                case Key.D7:
+                case Key.D8:
+                case Key.D9:
+                    e.Handled = false;
+                    break;
             }
-          
+        }
+
+        private void MoveLeft(int idx)
+        {
+            //Check out of bounds
+            if (idx < 0 || idx >= DateFormat.Length) return;
+
+            //DateFormat char that we start with
+            char first = DateFormat[idx];
+
+            //Previous character index
+            int prev = idx - 1;
+
+            //Keep moving left until a new DateFormat letter is found or prev < 0
+            while (prev >= 0 && (DateFormat[prev] == first || !Char.IsLetter(DateFormat[prev])))
+                prev--;
+
+            //Select previous control if prev < 0
+            if (prev < 0)
+                this.MoveFocus(new TraversalRequest(FocusNavigationDirection.Previous));
+            //Otherwise select the previous Date/Time component
+            else SelDateComponent(prev);
+        }
+
+        private void MoveRight(int idx)
+        {
+            //Check out of bounds
+            if (idx < 0 || idx >= DateFormat.Length) return;
+
+            //DateFormat char that we start with
+            char first = DateFormat[idx];
+
+            //Next character index
+            int next = idx + 1;
+
+            //Keep moving right until a new DateFormat letter is found or next is out of bounds
+            int max = DateFormat.Length; 
+            while (next < max && (DateFormat[next] == first || !Char.IsLetter(DateFormat[next])))
+                next++;
+
+            if (next == max)
+                CalendarButton.Focus();
+            else SelDateComponent(next);
         }
 
         private DateTime AddToDate(int idx, int val)
         {
             //Get the date being displayed
             DateTime d = DateTime.Parse(txtDateTime.Text);
+
             //First letter of the DateFormat selected
             char c = DateFormat[idx];
 
-            //TODO: Need a try/catch for invalid dates;
+            //TODO: Need a try/catch handler for invalid dates;
             switch (c)
             {
                 case 'y':
@@ -165,6 +228,14 @@ namespace WPF_DateTimePicker
                     break;
             }
             return d;
+        }
+
+        private void txtDateTime_LostFocus(object sender, RoutedEventArgs e)
+        {
+            DateTime d;
+            if (DateTime.TryParse(txtDateTime.Text, out d))
+                SelectedDate = d;
+            else txtDateTime.Undo();
         }
     }
 }
