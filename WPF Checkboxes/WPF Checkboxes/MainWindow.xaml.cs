@@ -29,8 +29,12 @@ namespace WPF_Checkboxes
 
         private void btnAll_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Yet Implemented");
-            Data.Dow = DayOfWeek.All;
+            Data.Dow = DayOfWeek.Everyday;
+        }
+
+        private void ShowVal_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Data.Dow.ToString());
         }
     }
 }

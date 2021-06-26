@@ -20,14 +20,28 @@
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
                        Converter={StaticResource dowConv },
                        ConverterParameter={x:Static local:DayOfWeek.Sun} }">Sunday</CheckBox>
-                    <CheckBox>Monday</CheckBox>
-                    <CheckBox>Tuesday</CheckBox>
-                    <CheckBox>Wednesday</CheckBox>
-                    <CheckBox>Thursday</CheckBox>
-                    <CheckBox>Friday</CheckBox>
-                    <CheckBox>Saturday</CheckBox>
+                    <CheckBox IsChecked="{Binding Path=Data.Dow,
+                        Converter={StaticResource dowConv},
+                        ConverterParameter={x:Static local:DayOfWeek.Mon}}">Monday</CheckBox>
+                    <CheckBox IsChecked="{Binding Path=Data.Dow,
+                        Converter={StaticResource dowConv},
+                        ConverterParameter={x:Static local:DayOfWeek.Tue}}">Tuesday</CheckBox>
+                    <CheckBox IsChecked="{Binding Path=Data.Dow,
+                        Converter={StaticResource dowConv},
+                        ConverterParameter={x:Static local:DayOfWeek.Wed}}">Wednesday</CheckBox>
+                    <CheckBox IsChecked="{Binding Path=Data.Dow,
+                        Converter={StaticResource dowConv},
+                        ConverterParameter={x:Static local:DayOfWeek.Thu}}">Thursday</CheckBox>
+                    <CheckBox IsChecked="{Binding Path=Data.Dow,
+                        Converter={StaticResource dowConv},
+                        ConverterParameter={x:Static local:DayOfWeek.Fri}}">Friday</CheckBox>
+                    <CheckBox IsChecked="{Binding Path=Data.Dow,
+                        Converter={StaticResource dowConv},
+                        ConverterParameter={x:Static local:DayOfWeek.Sat}}">Saturday</CheckBox>
                 </ListBox>
             </GroupBox>
+            <!-- Displays the value of the Enum Flags -->
+            <Button Width="100" Margin="5" Click="ShowVal_Click">Show Value</Button>
         </StackPanel>
 
     </Grid>

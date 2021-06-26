@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace WPF_Checkboxes
@@ -15,11 +17,32 @@ namespace WPF_Checkboxes
         Thu = 16,
         Fri = 32,
         Sat = 64,
-        All = 127
+        MonThruFri = Mon | Tue | Wed | Thu | Fri,
+        Weekends = Sat | Sun,
+        Everyday = 127
     }
-    public class MyData
+    public class MyData : INotifyPropertyChanged
     {
         public MyData() { }
-        public DayOfWeek Dow { get; set; } = DayOfWeek.All;
+
+        private DayOfWeek dow = DayOfWeek.MonThruFri;
+        public DayOfWeek Dow
+        {
+            get
+            {
+                return dow;
+            }
+            set
+            {
+                dow = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
