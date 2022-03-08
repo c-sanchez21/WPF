@@ -1,7 +1,6 @@
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\bin\Debug\WPF TreeView.exe.config
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\bin\Debug\WPF TreeView.exe
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\bin\Debug\WPF TreeView.pdb
-C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.csprojAssemblyReference.cache
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\MainWindow.g.cs
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\App.g.cs
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView_MarkupCompile.cache
@@ -13,3 +12,5 @@ C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.csproj.CoreCompileInputs.cache
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.exe
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.csproj.AssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\GeneratedInternalTypeHelper.g.cs

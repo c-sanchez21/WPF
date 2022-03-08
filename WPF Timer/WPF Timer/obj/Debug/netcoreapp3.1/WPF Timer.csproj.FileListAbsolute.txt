@@ -1,0 +1,19 @@
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.exe
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.deps.json
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.runtimeconfig.json
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.runtimeconfig.dev.json
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.dll
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.csproj.AssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer_MarkupCompile.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer_MarkupCompile.lref
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.g.resources
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.AssemblyInfo.cs
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.dll
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.pdb
+C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.genruntimeconfig.cache

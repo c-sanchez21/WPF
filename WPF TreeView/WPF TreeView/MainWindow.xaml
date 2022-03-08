@@ -21,11 +21,11 @@
     </Window.Resources>
     <StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBox HorizontalAlignment="Left" Name="txtItem" MinWidth="120" Margin="10"></TextBox>
+            <TextBox HorizontalAlignment="Left" Name="txtItem" MinWidth="150" Margin="10"></TextBox>
             <Button Name="btnAdd" Margin="5,10,10,10" MinWidth="75" Click="btnAdd_Click">Add Item</Button>
         </StackPanel>
         <TreeView Margin="10" Name="tvFoods" HorizontalAlignment="Left"
-                  VerticalAlignment="Top" MinWidth="120" MinHeight="120">
+                  VerticalAlignment="Top" MinWidth="150" MinHeight="120">
             <TreeViewItem Header="Foods">
                 <TreeViewItem Header="Lasanga"/>
                 <TreeViewItem Header="Beef Bowl"/>
@@ -33,5 +33,26 @@
             </TreeViewItem>
         </TreeView>
         <Button Margin="10,0,10,10" HorizontalAlignment="Left" MinWidth="75" Name="btnDelete" Click="btnDelete_Click">Delete Item</Button>
+        <TreeView Name="tvFamilies" MinWidth="150" HorizontalAlignment="Left" Margin="10">
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type local:Family}" ItemsSource="{Binding Members}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock Text=" ("/>
+                        <TextBlock Text="{Binding Members.Count}" Foreground="Blue"/>
+                        <TextBlock Text=")"/>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+                <DataTemplate DataType="{x:Type local:FamilyMember}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock Text=" ["/>
+                        <TextBlock Text="{Binding Age}" Foreground="Black"/>
+                        <TextBlock Text="]"/>
+                    </StackPanel>
+                </DataTemplate>
+            </TreeView.Resources>
+        </TreeView>
     </StackPanel>
+
 </Window>

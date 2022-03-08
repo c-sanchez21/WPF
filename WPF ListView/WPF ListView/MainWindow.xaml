@@ -7,46 +7,52 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <StackPanel Margin="5" Orientation="Horizontal">
-                <Button Width="45" Click="Button_Click">Sort</Button>
-            </StackPanel>
-            <ListView Name="myListView">
-              
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Style.Resources>
-                            <local:NumberToPolarValueConverter x:Key="NumToPolarValConv"/>
-                        </Style.Resources>
-                        <!-- Allows the texblock to fill the Item Cell & do right alignment -->
-                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                        <Style.Triggers>
-                            <!--Converts positive numbers to green-->
-                            <DataTrigger Binding="{Binding Val, Converter={StaticResource NumToPolarValConv}}" Value="+1">
-                                <Setter Property="Background" Value="Green"/>
-                            </DataTrigger>
-                            <!-- Converts negative numbers to red-->
-                            <DataTrigger Binding="{Binding Val, Converter={StaticResource NumToPolarValConv}}" Value="-1">
-                                <Setter Property="Background" Value="Red"/>
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </ListView.ItemContainerStyle>
-
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="Text" Width="50" DisplayMemberBinding="{Binding Text}"/>
-
-                        <GridViewColumn Header="Val" Width="50">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Val}" TextAlignment="Right"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".9*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="5" Orientation="Horizontal">
+            <Button Width="45" Click="Button_Click">Sort</Button>
         </StackPanel>
+        <ListView Name="myListView" Grid.Row="1">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Style.Resources>
+                        <local:NumberToPolarValueConverter x:Key="NumToPolarValConv"/>
+                    </Style.Resources>
+                    <!-- Allows the texblock to fill the Item Cell & do right alignment -->
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Style.Triggers>
+                        <!--Converts positive numbers to green-->
+                        <DataTrigger Binding="{Binding Val, Converter={StaticResource NumToPolarValConv}}" Value="+1">
+                            <Setter Property="Background" Value="Green"/>
+                        </DataTrigger>
+                        <!-- Converts negative numbers to red-->
+                        <DataTrigger Binding="{Binding Val, Converter={StaticResource NumToPolarValConv}}" Value="-1">
+                            <Setter Property="Background" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="50" DisplayMemberBinding="{Binding Text}">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader Tag="Text" Click="GridViewColumnHeader_Click">Text</GridViewColumnHeader>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                    <GridViewColumn Width="50" DisplayMemberBinding="{Binding Val}">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader Tag="Val" Click="GridViewColumnHeader_Click">Val</GridViewColumnHeader>
+                        </GridViewColumn.Header>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Val}" TextAlignment="Right"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

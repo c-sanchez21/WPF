@@ -21,10 +21,14 @@ namespace WPF_ListView
     /// </summary>
     public partial class MainWindow : Window
     {
+        private GridViewColumnHeader lvSortCol = null;
+        private SortAdorner lvSortAdorner = null;
         public MainWindow()
         {
             InitializeComponent();
             Init(); //Initialize Listview - Add Items
+            //CollectionView cv = (CollectionView)CollectionViewSource.GetDefaultView(myListView.ItemsSource);
+            //cv.SortDescriptions.Add(new SortDescription("Val", ListSortDirection.Ascending));
         }
 
         public class Foo
@@ -62,6 +66,66 @@ namespace WPF_ListView
         {
             CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(myListView.ItemsSource);
             view.SortDescriptions.Add(new SortDescription("Val", ListSortDirection.Ascending));
+        }
+
+        private void GridViewColumnHeader_Click(object sender, RoutedEventArgs e)
+        {
+            GridViewColumnHeader col = (sender as GridViewColumnHeader);
+            string sortPropery = col.Tag.ToString();
+            if (lvSortCol != null)
+            {
+                AdornerLayer.GetAdornerLayer(lvSortCol).Remove(lvSortAdorner);
+                myListView.Items.SortDescriptions.Clear();
+            }
+
+            ListSortDirection sortDir = ListSortDirection.Ascending;
+            if((col == lvSortCol) && (lvSortAdorner.Direction == sortDir))
+                sortDir = ListSortDirection.Descending;
+
+            lvSortCol = col;
+            lvSortAdorner = new SortAdorner(lvSortCol, sortDir);
+
+            AdornerLayer.GetAdornerLayer(lvSortCol).Add(lvSortAdorner);
+            myListView.Items.SortDescriptions.Add(new SortDescription(sortPropery, sortDir));
+        }
+
+        public class SortAdorner : Adorner
+        {
+            private static Geometry ascGeometry =
+                Geometry.Parse("M 0 4 L 3.5 0 L 7 4 Z");
+
+            private static Geometry descGeometry =
+                Geometry.Parse("M 0 0 L 3.5 4 L 7 0 Z");
+
+            public ListSortDirection Direction { get; private set; }
+
+            public SortAdorner(UIElement element, ListSortDirection dir)
+                : base(element)
+            {
+                this.Direction = dir;
+            }
+
+            protected override void OnRender(DrawingContext drawingContext)
+            {
+                base.OnRender(drawingContext);
+
+                if (AdornedElement.RenderSize.Width < 20)
+                    return;
+
+                TranslateTransform transform = new TranslateTransform
+                    (
+                        AdornedElement.RenderSize.Width - 15,
+                        (AdornedElement.RenderSize.Height - 5) / 2
+                    );
+                drawingContext.PushTransform(transform);
+
+                Geometry geometry = ascGeometry;
+                if (this.Direction == ListSortDirection.Descending)
+                    geometry = descGeometry;
+                drawingContext.DrawGeometry(Brushes.Black, null, geometry);
+
+                drawingContext.Pop();
+            }
         }
     }
 }

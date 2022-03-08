@@ -4,7 +4,6 @@ C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.runtimeconfig.dev.json
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.dll
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.pdb
-C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csprojAssemblyReference.cache
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView_MarkupCompile.cache
@@ -18,3 +17,4 @@ C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.pdb
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.genruntimeconfig.cache
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csproj.AssemblyReference.cache
