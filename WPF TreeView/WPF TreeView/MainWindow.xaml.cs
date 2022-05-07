@@ -22,9 +22,19 @@ namespace WPF_TreeView
     public partial class MainWindow : Window
     {
         List<Family> families;
+        ObservableCollection<Node> nodes; 
         public MainWindow()
         {
             InitializeComponent();
+
+            nodes = new ObservableCollection<Node>();
+                Node foods = new Node() { Header = "Foods" };
+            foods.SubNodes.Add(new Node() { Header = "Lasanga" });
+            foods.SubNodes.Add(new Node() { Header = "Beef Bowl" });
+            foods.SubNodes.Add(new Node() { Header = "Sushi" });
+            nodes.Add(foods);
+            tvFoods.Items.Clear();
+            tvFoods.ItemsSource = nodes;
 
             families = new List<Family>();
             Family fam1 = new Family() { Name = "The Does" };
@@ -46,15 +56,25 @@ namespace WPF_TreeView
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            TreeViewItem newItem = new TreeViewItem();
-            newItem.Header = txtItem.Text;
-            tvFoods.Items.Add(newItem);
+            if(tvFoods.SelectedItem == null)
+            {
+                nodes.Add(new Node() { Header = txtItem.Text });
+                return;
+            }
+            
+            Node n = tvFoods.SelectedItem as Node;
+            if (n == null) return;
+            n.SubNodes.Add(new Node() { Header = txtItem.Text });
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             //TODO: Implement deletion of subItems
-            tvFoods.Items.Remove(tvFoods.SelectedItem);
+            Node n = tvFoods.SelectedItem as Node;
+            if (n == null) return;
+            nodes.Remove(n);
+
+            //tvFoods.Items.Remove(tvFoods.SelectedItem);
         }
     }
     public class Family
@@ -74,5 +94,13 @@ namespace WPF_TreeView
     {
         public string Name { get; set; }
         public int Age { get; set; }
+    }
+
+    public class Node
+    {
+        public string Header { get; set; }
+
+        public ObservableCollection<Node> SubNodes { get; set; } = new ObservableCollection<Node>();
+        //public List<Node> SubNodes { get; set; } = new List<Node>();
     }
 }

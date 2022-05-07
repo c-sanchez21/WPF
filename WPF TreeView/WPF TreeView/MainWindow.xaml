@@ -26,11 +26,19 @@
         </StackPanel>
         <TreeView Margin="10" Name="tvFoods" HorizontalAlignment="Left"
                   VerticalAlignment="Top" MinWidth="150" MinHeight="120">
+            <!-- 
             <TreeViewItem Header="Foods">
                 <TreeViewItem Header="Lasanga"/>
                 <TreeViewItem Header="Beef Bowl"/>
                 <TreeViewItem Header="Sushi"/>
-            </TreeViewItem>
+            </TreeViewItem> -->
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type local:Node}" ItemsSource="{Binding SubNodes}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Header}"/>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
         </TreeView>
         <Button Margin="10,0,10,10" HorizontalAlignment="Left" MinWidth="75" Name="btnDelete" Click="btnDelete_Click">Delete Item</Button>
         <TreeView Name="tvFamilies" MinWidth="150" HorizontalAlignment="Left" Margin="10">
