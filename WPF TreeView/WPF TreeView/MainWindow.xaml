@@ -17,6 +17,7 @@
             <Setter Property="Foreground" Value="OliveDrab"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="FontWeight" Value="Bold"/>
+            <EventSetter Event="Selected" Handler="TreeViewItem_Selected"/>
         </Style>
     </Window.Resources>
     <StackPanel>

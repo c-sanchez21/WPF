@@ -69,12 +69,22 @@ namespace WPF_TreeView
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Implement deletion of subItems
+            Node p = SelectedItemParent.DataContext as Node;
             Node n = tvFoods.SelectedItem as Node;
-            if (n == null) return;
-            nodes.Remove(n);
+            if (p == null)
+                nodes.Remove(n);
+            else p.SubNodes.Remove(n);
+        }
 
-            //tvFoods.Items.Remove(tvFoods.SelectedItem);
+        private ItemsControl SelectedItemParent = null;
+        private void TreeViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show(e.OriginalSource.GetType().ToString());
+            TreeViewItem item = e.OriginalSource as TreeViewItem;
+            if (item == null) return;
+            ItemsControl parent = ItemsControl.ItemsControlFromItemContainer(item);
+            SelectedItemParent = parent;
+            //MessageBox.Show(parent.ToString());
         }
     }
     public class Family
