@@ -12,7 +12,7 @@
             <RowDefinition Height=".9*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="5" Orientation="Horizontal">
-            <Button Width="45" Click="Button_Click">Sort</Button>
+            <Label Content="Sample List View. Negative Values Red, Positive Values Green."/>
         </StackPanel>
         <ListView Name="myListView" Grid.Row="1">
             <ListView.ItemContainerStyle>

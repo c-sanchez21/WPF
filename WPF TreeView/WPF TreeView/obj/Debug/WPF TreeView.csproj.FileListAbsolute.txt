@@ -14,3 +14,4 @@ C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.pdb
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.csproj.AssemblyReference.cache
 C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Z\source\repos\Git\WPF\WPF TreeView\WPF TreeView\obj\Debug\WPF TreeView.csproj.SuggestedBindingRedirects.cache

@@ -18,3 +18,4 @@ C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.genruntimeconfig.cache
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csproj.AssemblyReference.cache
+C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.GeneratedMSBuildEditorConfig.editorconfig

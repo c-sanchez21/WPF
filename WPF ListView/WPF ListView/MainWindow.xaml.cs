@@ -62,12 +62,6 @@ namespace WPF_ListView
             myListView.ItemsSource = myItems;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(myListView.ItemsSource);
-            view.SortDescriptions.Add(new SortDescription("Val", ListSortDirection.Ascending));
-        }
-
         private void GridViewColumnHeader_Click(object sender, RoutedEventArgs e)
         {
             GridViewColumnHeader col = (sender as GridViewColumnHeader);
