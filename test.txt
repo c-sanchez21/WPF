@@ -1,15 +1,1 @@
- Volume in drive C has no label.
- Volume Serial Number is 90CD-BAF5
-
- Directory of C:\Users\Z\source\repos\Git\WPF
-
-07/20/2021  12:15 PM    <DIR>          .
-07/20/2021  12:15 PM    <DIR>          ..
-07/20/2021  12:15 PM                 0 test.txt
-07/20/2021  12:12 PM    <DIR>          WPF Checkboxes
-07/20/2021  12:12 PM    <DIR>          WPF DateTimePicker
-07/20/2021  12:12 PM    <DIR>          WPF ListView
-07/20/2021  12:12 PM    <DIR>          WPF Text
-07/20/2021  12:12 PM    <DIR>          WPF TreeView
-               1 File(s)              0 bytes
-               7 Dir(s)  366,686,126,080 bytes free
+Testing command line GIT
