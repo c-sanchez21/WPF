@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WPF Checkboxes/.vs/WPF Checkboxes/FileContentIndex/c4b945bd-c2f1-4834-a183-0d600ebdf010.vsidx
+/WPF Checkboxes/.vs/WPF Checkboxes/DesignTimeBuild/.dtbcache.v2
+/WPF Checkboxes/.vs/WPF Checkboxes/v17/.suo
+/WPF Checkboxes/.vs/WPF Checkboxes/v17/DocumentLayout.backup.json
+/WPF Checkboxes/.vs/WPF Checkboxes/v17/DocumentLayout.json
