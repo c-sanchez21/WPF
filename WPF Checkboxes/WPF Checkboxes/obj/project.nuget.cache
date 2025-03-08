@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CfQ+0d2pdOrd0ZlThIHJVqu+smuyBmFNEvlZBwByMvbhKgfJ/7YNP72MCjI2x0NHc6DVxKQWLCa+2b/K0Na6NA==",
+  "dgSpecHash": "xTKNODlqL9c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Z\\source\\repos\\Git\\WPF\\WPF Checkboxes\\WPF Checkboxes\\WPF Checkboxes.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF Checkboxes\\WPF Checkboxes\\WPF Checkboxes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

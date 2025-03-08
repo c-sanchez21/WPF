@@ -10,7 +10,8 @@
         <Style TargetType="{x:Type CheckBox}">
             <Setter Property="Foreground" Value="White"/>
         </Style>
-        <local:DowConverter x:Key="dowConv"/>
+        <!-- Day of the Week Converter -->
+        <local:DowConverter x:Key="dowConverter"/>
     </Window.Resources>
     <Grid>
         <StackPanel>
@@ -18,25 +19,25 @@
             <GroupBox Header="Day of the Week">
                 <ListBox Background="Transparent">
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                       Converter={StaticResource dowConv },
+                       Converter={StaticResource dowConverter  },
                        ConverterParameter={x:Static local:DayOfWeek.Sun} }">Sunday</CheckBox>
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                        Converter={StaticResource dowConv},
+                        Converter={StaticResource dowConverter},
                         ConverterParameter={x:Static local:DayOfWeek.Mon}}">Monday</CheckBox>
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                        Converter={StaticResource dowConv},
+                        Converter={StaticResource dowConverter},
                         ConverterParameter={x:Static local:DayOfWeek.Tue}}">Tuesday</CheckBox>
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                        Converter={StaticResource dowConv},
+                        Converter={StaticResource dowConverter},
                         ConverterParameter={x:Static local:DayOfWeek.Wed}}">Wednesday</CheckBox>
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                        Converter={StaticResource dowConv},
+                        Converter={StaticResource dowConverter},
                         ConverterParameter={x:Static local:DayOfWeek.Thu}}">Thursday</CheckBox>
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                        Converter={StaticResource dowConv},
+                        Converter={StaticResource dowConverter},
                         ConverterParameter={x:Static local:DayOfWeek.Fri}}">Friday</CheckBox>
                     <CheckBox IsChecked="{Binding Path=Data.Dow,
-                        Converter={StaticResource dowConv},
+                        Converter={StaticResource dowConverter},
                         ConverterParameter={x:Static local:DayOfWeek.Sat}}">Saturday</CheckBox>
                 </ListBox>
             </GroupBox>
