@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "8LM83T5pZO6ZJ4NpxY+XR5rrSayRH11g1uI9l5MAV3TPvXd8J8pBcLnbHxbq3I/RIoTsM+GR7gvYOkx5ExOHVA==",
+  "dgSpecHash": "owRDHv0H/h4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Z\\source\\repos\\Git\\WPF\\WPF DateTimePicker\\WPF DateTimePicker\\WPF DateTimePicker.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF DateTimePicker\\WPF DateTimePicker\\WPF DateTimePicker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

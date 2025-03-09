@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\
+X:\GITHUB\c-sanchez21\WPF\WPF DateTimePicker\WPF DateTimePicker\obj\Debug\netcoreapp3.1\
 WPF_DateTimePicker
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\Z\source\repos\Git\WPF\WPF DateTimePicker\WPF DateTimePicker\App.xaml
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+X:\GITHUB\c-sanchez21\WPF\WPF DateTimePicker\WPF DateTimePicker\App.xaml
 2-1520934121
 
 61967318241
-192-1533232326
+192-1502651167
 DateTimePicker.xaml;MainWindow.xaml;
 
 True

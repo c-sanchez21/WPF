@@ -8,9 +8,7 @@
              >
     <StackPanel Orientation="Horizontal">
         <TextBox Name="txtDateTime" Text="2021-06-10 15:22" Height="21" PreviewMouseUp="txtDateTime_PreviewMouseUp" PreviewKeyDown="txtDateTime_PreviewKeyDown" LostFocus="txtDateTime_LostFocus"/>
-        <ToggleButton Name="CalendarButton" Width="10">
-            <!-- <Border Background="DarkGray" BorderBrush="Black" BorderThickness="1"/> -->
-        </ToggleButton>
+        <ToggleButton Name="CalendarButton" Width="10"/>
         <Popup IsOpen="{Binding ElementName=CalendarButton, Path=IsChecked}" 
                StaysOpen="False" >
             <Calendar x:Name="calView" SelectedDatesChanged="calView_SelectedDatesChanged"/>

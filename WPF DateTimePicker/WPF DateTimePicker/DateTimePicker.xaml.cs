@@ -23,7 +23,6 @@ namespace WPF_DateTimePicker
         public DateTimePicker()
         {
             InitializeComponent();
-
         }
 
         #region Properties
@@ -88,14 +87,14 @@ namespace WPF_DateTimePicker
         {
             int idx = txtDateTime.SelectionStart;
             //Focuses on the date component that was clicked on
-            SelDateComponent(idx); 
+            SelectDateComponent(idx); 
         }
 
         /// <summary>
         /// Selects the date/time component user at idx.
         /// </summary>
         /// <param name="idx"></param>
-        private void SelDateComponent(int idx)
+        private void SelectDateComponent(int idx)
         {
             //Check for out of bounds
             if (idx >= DateFormat.Length) idx = DateFormat.Length - 1;
@@ -121,11 +120,11 @@ namespace WPF_DateTimePicker
             {
                 case Key.Up:
                     SelectedDate = AddToDate(idx, 1);//Increment
-                    SelDateComponent(idx);
+                    SelectDateComponent(idx);
                     break;
                 case Key.Down:
                     SelectedDate = AddToDate(idx, -1);//Decrement
-                    SelDateComponent(idx);
+                    SelectDateComponent(idx);
                     break;
                 case Key.Left:
                     MoveLeft(idx);
@@ -169,7 +168,7 @@ namespace WPF_DateTimePicker
             if (prev < 0)
                 this.MoveFocus(new TraversalRequest(FocusNavigationDirection.Previous));
             //Otherwise select the previous Date/Time component
-            else SelDateComponent(prev);
+            else SelectDateComponent(prev);
         }
 
         private void MoveRight(int idx)
@@ -190,7 +189,7 @@ namespace WPF_DateTimePicker
 
             if (next == max)
                 CalendarButton.Focus();
-            else SelDateComponent(next);
+            else SelectDateComponent(next);
         }
 
         private DateTime AddToDate(int idx, int val)
