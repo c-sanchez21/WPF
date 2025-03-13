@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC272E9-2ABF-4430-9545-FB94B7967380}|WPF ListView\\WPF ListView.csproj|x:\\github\\c-sanchez21\\wpf\\wpf listview\\wpf listview\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EC272E9-2ABF-4430-9545-FB94B7967380}|WPF ListView\\WPF ListView.csproj|solutionrelative:wpf listview\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC272E9-2ABF-4430-9545-FB94B7967380}|WPF ListView\\WPF ListView.csproj|x:\\github\\c-sanchez21\\wpf\\wpf listview\\wpf listview\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC272E9-2ABF-4430-9545-FB94B7967380}|WPF ListView\\WPF ListView.csproj|solutionrelative:wpf listview\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC272E9-2ABF-4430-9545-FB94B7967380}|WPF ListView\\WPF ListView.csproj|x:\\github\\c-sanchez21\\wpf\\wpf listview\\wpf listview\\numbertopolarvalueconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EC272E9-2ABF-4430-9545-FB94B7967380}|WPF ListView\\WPF ListView.csproj|solutionrelative:wpf listview\\numbertopolarvalueconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\WPF ListView\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF ListView\\MainWindow.xaml.cs",
+              "ToolTip": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\WPF ListView\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPF ListView\\MainWindow.xaml.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T02:48:48.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\WPF ListView\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF ListView\\MainWindow.xaml",
+              "ToolTip": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\WPF ListView\\MainWindow.xaml",
+              "RelativeToolTip": "WPF ListView\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-12T02:48:48.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NumberToPolarValueConverter.cs",
+              "DocumentMoniker": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\WPF ListView\\NumberToPolarValueConverter.cs",
+              "RelativeDocumentMoniker": "WPF ListView\\NumberToPolarValueConverter.cs",
+              "ToolTip": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF ListView\\WPF ListView\\NumberToPolarValueConverter.cs",
+              "RelativeToolTip": "WPF ListView\\NumberToPolarValueConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T02:48:48.62Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

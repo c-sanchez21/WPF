@@ -5,32 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_ListView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ListView Example" Height="800" Width="450">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height=".1*"/>
-            <RowDefinition Height=".9*"/>
+            <RowDefinition Height=".05*"/>
+            <RowDefinition Height=".95*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="5" Orientation="Horizontal">
-            <Label Content="Sample List View. Negative Values Red, Positive Values Green."/>
+            <Label Content="Sample List View.Negative Values Red, Positive Values Green."/>
         </StackPanel>
         <ListView Name="myListView" Grid.Row="1">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Style.Resources>
                         <local:NumberToPolarValueConverter x:Key="NumToPolarValConv"/>
+                        
+                        
                     </Style.Resources>
                     <!-- Allows the texblock to fill the Item Cell & do right alignment -->
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                     <Style.Triggers>
+                        
                         <!--Converts positive numbers to green-->
                         <DataTrigger Binding="{Binding Val, Converter={StaticResource NumToPolarValConv}}" Value="+1">
-                            <Setter Property="Background" Value="Green"/>
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity=".75">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Color="DarkGreen" Offset="0" />
+                                            <GradientStop Color="Lime" Offset=".5" />
+                                            <GradientStop Color="DarkGreen" Offset="1" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
                         </DataTrigger>
+                        
                         <!-- Converts negative numbers to red-->
                         <DataTrigger Binding="{Binding Val, Converter={StaticResource NumToPolarValConv}}" Value="-1">
-                            <Setter Property="Background" Value="Red"/>
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity=".75">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Color="DarkRed" Offset="0" />
+                                            <GradientStop Color="Red"  Offset=".5" />
+                                            <GradientStop Color="DarkRed" Offset="1" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                            
                         </DataTrigger>
+                        
                     </Style.Triggers>
                 </Style>
             </ListView.ItemContainerStyle>

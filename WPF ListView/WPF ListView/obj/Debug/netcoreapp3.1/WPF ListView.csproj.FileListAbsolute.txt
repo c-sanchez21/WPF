@@ -19,3 +19,24 @@ C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csproj.AssemblyReference.cache
 C:\Users\Z\source\repos\Git\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.GeneratedMSBuildEditorConfig.editorconfig
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.exe
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.deps.json
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.runtimeconfig.json
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.runtimeconfig.dev.json
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.dll
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\bin\Debug\netcoreapp3.1\WPF ListView.pdb
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\App.g.cs
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView_MarkupCompile.cache
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView_MarkupCompile.lref
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\MainWindow.baml
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.g.resources
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.GeneratedMSBuildEditorConfig.editorconfig
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.AssemblyInfoInputs.cache
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.AssemblyInfo.cs
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.csproj.CoreCompileInputs.cache
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.sourcelink.json
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.dll
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.pdb
+X:\GITHUB\c-sanchez21\WPF\WPF ListView\WPF ListView\obj\Debug\netcoreapp3.1\WPF ListView.genruntimeconfig.cache
