@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF Timer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82cba4d6a9a4b84d43f39a99cb0b2e0c8aaf0386")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF Timer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF Timer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9Q8MbvBWk+kSFhohJV3BQhhnXW3hcnFvoGgze0oXW+xu8C9dqwehkpz6VxGnP8J7xTHE9p8wHg3V/xnwTzP1cg==",
+  "dgSpecHash": "BVd6F8n8Iwk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Z\\source\\repos\\Git\\WPF\\WPF Timer\\WPF Timer\\WPF Timer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "X:\\GITHUB\\c-sanchez21\\WPF\\WPF Timer\\WPF Timer\\WPF Timer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }
