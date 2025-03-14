@@ -6,14 +6,26 @@
         xmlns:local="clr-namespace:WPF_Text"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="210">
-    <StackPanel>
-        <Label Content="_String:" Target="{Binding ElementName=txtString}"/>
-        <!-- TODO: Scrollviewer not working for some reason -->
-        <ScrollViewer IsEnabled="True">
-            <TextBox Name="txtString" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="en-US"/>
+    <DockPanel>
+
+        <!-- TODO: Scrollviewer does not work when the panel is of resizing type -->
+        <Label DockPanel.Dock="Top" Margin="5" Content="_String:" Target="{Binding ElementName=txtString}"/>
+        <ScrollViewer DockPanel.Dock="Top" IsEnabled="True" HorizontalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBox Name="txtString" Height="50" Margin="5" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="en-US"/>
+            </StackPanel>
         </ScrollViewer>
-        <Button Name="btnClear" Click="btnClear_Click">Clear</Button>
-        <TextBlock Foreground="Red" Margin="10" TextTrimming="CharacterEllipsis"> <Span> <Bold>TextBlock no Wrapping </Bold> <Italic> ABCDEFGHIJKLMNOPQRSTUVWXYZ </Italic></Span></TextBlock>
-        <TextBlock Foreground="Green" Margin="10" TextWrapping="Wrap"> <Span> <Bold>Textblock with Wrapping </Bold> <Italic>ABCDEFGHIJKLMNOPQRSTUVWXYZ </Italic></Span></TextBlock>
-    </StackPanel>
+        <Button DockPanel.Dock="Top" Name="btnClear" Margin="5" Click="btnClear_Click">Clear</Button>
+        <TextBlock DockPanel.Dock="Top" Foreground="Red" Margin="10" TextTrimming="CharacterEllipsis"> <Span> <Bold>TextBlock no Wrapping </Bold> <Italic> ABCDEFGHIJKLMNOPQRSTUVWXYZ </Italic></Span></TextBlock>
+        <TextBlock DockPanel.Dock="Top" Foreground="Green" Margin="10" TextWrapping="Wrap"> <Span> <Bold>Textblock with Wrapping </Bold> <Italic>ABCDEFGHIJKLMNOPQRSTUVWXYZ </Italic></Span></TextBlock>
+
+        <!-- Sample Code from Microsoft -->
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">Scrolling is enabled when it is necessary. 
+      Resize the window, making it larger and smaller.</TextBlock>
+                <Rectangle Fill="Red" Width="500" Height="500"></Rectangle>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
 </Window>
