@@ -17,3 +17,24 @@ C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF 
 C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.dll
 C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.pdb
 C:\Users\Z\source\repos\Git\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.genruntimeconfig.cache
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.exe
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.deps.json
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.runtimeconfig.json
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.runtimeconfig.dev.json
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.dll
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\bin\Debug\netcoreapp3.1\WPF Timer.pdb
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.csproj.AssemblyReference.cache
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\App.g.cs
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer_MarkupCompile.cache
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer_MarkupCompile.lref
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\MainWindow.baml
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.g.resources
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.GeneratedMSBuildEditorConfig.editorconfig
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.AssemblyInfoInputs.cache
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.AssemblyInfo.cs
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.csproj.CoreCompileInputs.cache
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.sourcelink.json
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.dll
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.pdb
+X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\obj\Debug\netcoreapp3.1\WPF Timer.genruntimeconfig.cache

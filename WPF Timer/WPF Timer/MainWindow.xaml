@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:WPF_Timer"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="320">
-    <Grid>
-        <Label Name="lblTimer">00:00:00</Label>
-    </Grid>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Local Time: </Label>
+            <Label Name="lblTimer">00:00:00</Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Duration: "/>
+            <TextBlock>
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0:00}:{1:00}:{2:00}">
+                        <Binding Path="Duration.Hours"/>
+                        <Binding Path="Duration.Minutes"/>
+                        <Binding Path="Duration.Seconds"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </StackPanel>
+    </StackPanel>
 </Window>

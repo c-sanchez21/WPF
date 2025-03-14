@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = WPF_Timer
+build_property.ProjectDir = X:\GITHUB\c-sanchez21\WPF\WPF Timer\WPF Timer\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
