@@ -56,6 +56,12 @@ namespace WPF_TreeView
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
+            if(String.IsNullOrEmpty(txtItem.Text))
+            {
+                MessageBox.Show("Node Name should not be blank","Error");
+                return;
+            }
+
             if(tvFoods.SelectedItem == null)
             {
                 nodes.Add(new Node() { Header = txtItem.Text });
