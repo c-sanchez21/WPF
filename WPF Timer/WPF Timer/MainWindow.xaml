@@ -12,16 +12,22 @@
             <Label Name="lblTimer">00:00:00</Label>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Duration: "/>
-            <TextBlock>
-                <TextBlock.Text>
-                    <MultiBinding StringFormat="{}{0:00}:{1:00}:{2:00}">
-                        <Binding Path="Duration.Hours"/>
-                        <Binding Path="Duration.Minutes"/>
-                        <Binding Path="Duration.Seconds"/>
-                    </MultiBinding>
-                </TextBlock.Text>
-            </TextBlock>
+            <Label>
+                <TextBlock Text="Duration: "/>
+            </Label>
+
+            <Label>
+                <!-- Timespan Binded Textblock -->
+                <TextBlock>
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}{0:00}:{1:00}:{2:00}">
+                            <Binding Path="Duration.Hours"/>
+                            <Binding Path="Duration.Minutes"/>
+                            <Binding Path="Duration.Seconds"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+            </Label>
         </StackPanel>
     </StackPanel>
 </Window>
