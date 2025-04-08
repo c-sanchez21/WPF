@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
+
 
 namespace WPF_Checkboxes
 {
@@ -34,7 +37,7 @@ namespace WPF_Checkboxes
 
         private void ShowVal_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Data.Dow.ToString());
+            MessageBox.Show(Data.Dow.ToString());                     
         }
     }
 }
