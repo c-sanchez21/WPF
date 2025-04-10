@@ -6,17 +6,22 @@
         xmlns:local="clr-namespace:TabControl"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <!-- Tab Items Context Menu -->
+        <ContextMenu x:Key="tabItemContextMenu">
+            <MenuItem Header="Close Tab" Click="MenuItem_ClickClose"/>
+        </ContextMenu>                             
+    </Window.Resources>
     <Grid>
         <TabControl Name="zTabControl">
-            <TabControl.ContextMenu>
-                <ContextMenu>
-                    <MenuItem Header="Close" Click="MenuItem_ClickClose"/>
-                </ContextMenu>
-            </TabControl.ContextMenu>
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="ContextMenu" Value="{StaticResource ResourceKey=tabItemContextMenu}"/>
+                </Style>
+            </TabControl.Resources>
             <TabItem Header="1"/>
             <TabItem Header="2"/>
             <TabItem Header="3"/>
         </TabControl>
-
     </Grid>
 </Window>

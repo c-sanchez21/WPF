@@ -21,9 +21,13 @@ namespace TabControl
             InitializeComponent();
         }
         private void MenuItem_ClickClose(object sender, RoutedEventArgs e)
-        {
-            object obj = zTabControl.SelectedItem;
-            TabItem item = obj as TabItem;
+        {            
+            MenuItem menuItem = sender as MenuItem;
+            if (menuItem == null) return;
+            ContextMenu cm = menuItem.Parent as ContextMenu;            
+            if (cm == null) return;
+            TabItem item = cm.PlacementTarget as TabItem;
+            if (item == null) return;            
             zTabControl.Items.Remove(item);
         }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TabControl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2685dd753e6edd57565f97f8f159c1483100dc83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eacbf2a8f19d6afa5a7b82e7525d9ffcc3f15c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("TabControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TabControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
