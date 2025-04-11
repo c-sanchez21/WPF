@@ -9,6 +9,7 @@
     <Window.Resources>
         <!-- Tab Items Context Menu -->
         <ContextMenu x:Key="tabItemContextMenu">
+            <!-- Will remove/close the TabItem that was right clicked --> 
             <MenuItem Header="Close Tab" Click="MenuItem_ClickClose"/>
         </ContextMenu>                             
     </Window.Resources>
@@ -19,9 +20,21 @@
                     <Setter Property="ContextMenu" Value="{StaticResource ResourceKey=tabItemContextMenu}"/>
                 </Style>
             </TabControl.Resources>
-            <TabItem Header="1"/>
-            <TabItem Header="2"/>
-            <TabItem Header="3"/>
+            <TabItem Header="1">
+                <ListView>
+                    <ListViewItem>Item A</ListViewItem>
+                </ListView>
+            </TabItem>
+            <TabItem Header="2">
+                <ListView>
+                    <ListViewItem>Item B</ListViewItem>
+                </ListView>
+            </TabItem>
+            <TabItem Header="3">
+                <ListView>
+                    <ListViewItem>Item C</ListViewItem>
+                </ListView>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>
