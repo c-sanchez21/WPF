@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF ListView")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0aec816dcd272f9adc175c045d8268e80de89656")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ea7cefaa1ff53534818d55f90587a19f1316634")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF ListView")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF ListView")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -30,5 +30,21 @@ namespace TabControl
             if (item == null) return;            
             zTabControl.Items.Remove(item);
         }
+
+        private void ListView_MouseMove(object sender, MouseEventArgs e)
+        {
+            ListView lv = sender as ListView;
+            if(lv == null) return;
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragDrop.DoDragDrop(lv, lv.SelectedItems, DragDropEffects.Copy);
+            }
+        }
+
+        private void ListView_DragEnter(object sender, DragEventArgs e)
+        {
+            ListView lv = sender as ListView;
+            if(lv == null) return;
+        }
     }
 }
