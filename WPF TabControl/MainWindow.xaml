@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="TabControl" Height="450" Width="800">
     <Window.Resources>
+        <Style TargetType="ListView">
+            <Setter Property="AllowDrop" Value="True"/>
+        </Style>
         <!-- Tab Items Context Menu -->
         <ContextMenu x:Key="tabItemContextMenu">
             <!-- Will remove/close the TabItem that was right clicked --> 
@@ -14,6 +17,11 @@
         </ContextMenu>                             
     </Window.Resources>
     <Grid>
+        <Grid.Resources>
+            <Style TargetType="TabControl">
+                <Setter Property="AllowDrop" Value="True"/>
+            </Style>
+        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width=".5*"/>
             <ColumnDefinition Width="Auto"/>
@@ -26,12 +34,15 @@
         <TabControl Name="zTabControl">
             <TabControl.Resources>
                 <Style TargetType="ListView">
-                    
+                    <!-- <Setter Property="AllowDrop" Value="True"/> -->
+
                     <EventSetter Event="MouseMove" Handler="ListView_MouseMove"/>
-                    
+
                     <!-- The DragEnter event occurs when the data is dragged into the drop target's boundary. -->
                     <EventSetter Event="DragEnter" Handler="ListView_DragEnter"/>
-                    
+
+                    <EventSetter Event="DragOver" Handler="ListView_DragOver"/>
+
                 </Style>
                 <Style TargetType="TabItem">
                     <Setter Property="ContextMenu" Value="{StaticResource ResourceKey=tabItemContextMenu}"/>
@@ -55,6 +66,19 @@
         </TabControl>
 
         <TabControl Grid.Column="2">
+            <TabControl.Resources>
+                <Style TargetType="ListView">
+
+                <EventSetter Event="MouseMove" Handler="ListView_MouseMove"/>
+
+                <!-- The DragEnter event occurs when the data is dragged into the drop target's boundary. -->
+                <EventSetter Event="DragEnter" Handler="ListView_DragEnter"/>
+
+            </Style>
+            <Style TargetType="TabItem">
+                <Setter Property="ContextMenu" Value="{StaticResource ResourceKey=tabItemContextMenu}"/>
+            </Style>
+            </TabControl.Resources>
             <TabItem Header="4">
                 <ListView>
                     <ListViewItem>Item D</ListViewItem>

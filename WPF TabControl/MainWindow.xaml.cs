@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace TabControl
 {
@@ -37,14 +38,37 @@ namespace TabControl
             if(lv == null) return;
             if(e.LeftButton == MouseButtonState.Pressed)
             {
-                DragDrop.DoDragDrop(lv, lv.SelectedItems, DragDropEffects.Copy);
+                DragDrop.DoDragDrop(lv, lv.SelectedItem, DragDropEffects.Move);                                
+                /*
+                To specify that an element is a drop target, you set its AllowDrop property to true.
+                During a drag - and - drop operation, the following sequence of events occurs on the drop target:
+                1. DragEnter
+                2. DragOver
+                3. DragLeave or Drop
+                */
             }
         }
 
+        /*
+         * The DragEnter event occurs when the data is dragged into the drop target's boundary. 
+         * You typically handle this event to provide a preview of the effects of the drag-and-drop operation, 
+         * if appropriate for your application. 
+         * Do not set the DragEventArgs.Effects property in the DragEnter event, 
+         * as it will be overwritten in the DragOver event.
+         */        
         private void ListView_DragEnter(object sender, DragEventArgs e)
-        {
+        {            
             ListView lv = sender as ListView;
-            if(lv == null) return;
+            if(lv == null) return;            
+        }
+
+        private void ListView_DragOver(object sender, DragEventArgs e)
+        {
+            string[] formats = e.Data.GetFormats();
+            bool isListViewItem = e.Data.GetDataPresent("System.Windows.Controls.ListViewItem");
+            if (isListViewItem)
+                e.Effects = DragDropEffects.Move;
+            else e.Effects = DragDropEffects.None;                            
         }
     }
 }
