@@ -17,6 +17,7 @@ namespace TabControl
     /// </summary>
     public partial class MainWindow : Window
     {
+        const string DATAFORMAT = "System.Windows.Controls.ListViewItem";
         public MainWindow()
         {
             InitializeComponent();
@@ -57,18 +58,42 @@ namespace TabControl
          * as it will be overwritten in the DragOver event.
          */        
         private void ListView_DragEnter(object sender, DragEventArgs e)
-        {            
+        {
             ListView lv = sender as ListView;
-            if(lv == null) return;            
+            if (lv == null) return;
         }
 
         private void ListView_DragOver(object sender, DragEventArgs e)
         {
             string[] formats = e.Data.GetFormats();
-            bool isListViewItem = e.Data.GetDataPresent("System.Windows.Controls.ListViewItem");
+            bool isListViewItem = e.Data.GetDataPresent(DATAFORMAT);
             if (isListViewItem)
                 e.Effects = DragDropEffects.Move;
             else e.Effects = DragDropEffects.None;                            
+        }
+
+        private void ListView_Drop(object sender, DragEventArgs e)
+        {
+            ListView lv = sender as ListView;
+            if (lv == null) return;            
+            if (e.Data.GetDataPresent(DATAFORMAT))
+            {
+                ListViewItem lvItem = e.Data.GetData(DATAFORMAT) as ListViewItem;
+                if(lvItem == null) return;
+
+                //Get ListViewItem Parent
+                var parent = VisualTreeHelper.GetParent(lvItem);
+                while(parent != null && !(parent is ListView))
+                    parent = VisualTreeHelper.GetParent(parent);                                
+
+                ListView lvSource = parent as ListView;
+                if(lvSource != null)
+                {
+                    lvSource.Items.Remove(lvItem);
+                }
+                lv.Items.Add(lvItem);                
+            }
+
         }
     }
 }
