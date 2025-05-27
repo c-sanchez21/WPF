@@ -46,7 +46,13 @@
                     <Setter Property="ContextMenu" Value="{StaticResource ResourceKey=tabItemContextMenu}"/>
                 </Style>
             </TabControl.Resources>
-            <TabItem Header="1">
+            <TabItem>
+                <TabItem.Header>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Top" FontSize="3">X</Button>
+                        <TextBlock Text="1"/>
+                    </DockPanel>
+                </TabItem.Header>
                 <ListView>
                     <ListViewItem>Item A</ListViewItem>
                 </ListView>

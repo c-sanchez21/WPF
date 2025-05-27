@@ -40,6 +40,8 @@ namespace WPF_TreeView
             Family fam1 = new Family() { Name = "The Does" };
             Family fam2 = new Family() { Name = "The Smiths" };
 
+
+            //Creates Families for TreeView Example
             Random r = new Random();
             fam1.Members.Add(new FamilyMember() { Name = "John Doe", Age = r.Next(18, 100) });
             fam1.Members.Add(new FamilyMember() { Name = "Jane Doe", Age = r.Next(18, 100) });
@@ -84,13 +86,11 @@ namespace WPF_TreeView
 
         private ItemsControl SelectedItemParent = null;
         private void TreeViewItem_Selected(object sender, RoutedEventArgs e)
-        {
-            //MessageBox.Show(e.OriginalSource.GetType().ToString());
+        {            
             TreeViewItem item = e.OriginalSource as TreeViewItem;
             if (item == null) return;
             ItemsControl parent = ItemsControl.ItemsControlFromItemContainer(item);
-            SelectedItemParent = parent;
-            //MessageBox.Show(parent.ToString());
+            SelectedItemParent = parent;         
         }
     }
     public class Family
@@ -116,7 +116,6 @@ namespace WPF_TreeView
     {
         public string Header { get; set; }
 
-        public ObservableCollection<Node> SubNodes { get; set; } = new ObservableCollection<Node>();
-        //public List<Node> SubNodes { get; set; } = new List<Node>();
+        public ObservableCollection<Node> SubNodes { get; set; } = new ObservableCollection<Node>();        
     }
 }

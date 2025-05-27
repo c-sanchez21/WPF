@@ -37,7 +37,7 @@ namespace TabControl
         {
             ListView lv = sender as ListView;
             if(lv == null) return;
-            if(e.LeftButton == MouseButtonState.Pressed)
+            if(e.LeftButton == MouseButtonState.Pressed && lv.SelectedItem != null)
             {
                 DragDrop.DoDragDrop(lv, lv.SelectedItem, DragDropEffects.Move);                                
                 /*
