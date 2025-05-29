@@ -25,6 +25,12 @@
             <ColumnDefinition Width=".5*"/>
             <ColumnDefinition Width=".5*"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".5*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Example 1-->
         <GroupBox Header="TreeView Example 1" FontWeight="Bold">
             <StackPanel Grid.Column="0">
                 <Label FontWeight="Bold" Margin="8,0,0,0">Node Name</Label>
@@ -48,8 +54,8 @@
             </StackPanel>
         </GroupBox>
 
+        <!-- Example 2-->
         <GroupBox Grid.Column="1" Header="TreeView Example 2" FontWeight="Bold">
-
             <TreeView Name="tvFamilies" MinWidth="150" HorizontalAlignment="Left" Margin="10">
                 <TreeView.Resources>
                     <HierarchicalDataTemplate DataType="{x:Type local:Family}" ItemsSource="{Binding Members}">
@@ -70,6 +76,29 @@
                     </DataTemplate>
                 </TreeView.Resources>
             </TreeView>
+        </GroupBox>
+        
+        <!-- Example 3-->
+        <GroupBox Grid.Row="1" Header="TreeView Example 3" FontWeight="Bold">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Name="tbSearchBox" Width="30" Visibility="Visible"/>
+                    <Button Click="Button_FindItemClick" Visibility="Visible">Find</Button>
+                    <Button Click="Button_ClickExpandAll">Expand All</Button>
+                </StackPanel>
+                <TreeView Name="tvNumbers"  ItemsSource="{Binding Example3Nodes}" MinHeight="100" >
+                    <TreeView.Resources>
+                        <Style TargetType="TreeViewItem">
+                            <EventSetter Event="Expanded" Handler="TreeViewItem_Expanded"/>
+                        </Style>
+                        <HierarchicalDataTemplate DataType="{x:Type local:Node}" ItemsSource="{Binding SubNodes}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Header}"/>
+                            </StackPanel>
+                        </HierarchicalDataTemplate>
+                    </TreeView.Resources>
+                </TreeView>
+            </StackPanel>
         </GroupBox>
     </Grid>
 </Window>

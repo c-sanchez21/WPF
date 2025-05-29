@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace WPF_TreeView
 {
@@ -22,13 +25,16 @@ namespace WPF_TreeView
     public partial class MainWindow : Window
     {
         List<Family> families;
-        ObservableCollection<Node> nodes; 
+        ObservableCollection<Node> nodes;
+        Dictionary<string, Node> nodeMap = new Dictionary<string, Node>();
+        public ObservableCollection<Node> Example3Nodes { get; set; } = new ObservableCollection<Node>();
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
 
             nodes = new ObservableCollection<Node>();
-                Node foods = new Node() { Header = "Foods" };
+            Node foods = new Node() { Header = "Foods" };
             foods.SubNodes.Add(new Node() { Header = "Lasanga" });
             foods.SubNodes.Add(new Node() { Header = "Beef Bowl" });
             foods.SubNodes.Add(new Node() { Header = "Sushi" });
@@ -53,23 +59,38 @@ namespace WPF_TreeView
             families.Add(fam2);
 
             tvFamilies.ItemsSource = families;
+
+            PopulateExample3();
+        }
+
+        private void PopulateExample3()
+        {
+            Node n = new Node() { Header = "0" };
+            nodeMap.Add(n.Header, n);
+            Example3Nodes.Add(n);
+            for (int i = 1; i <= 10; i++)
+            {
+                n.SubNodes.Add(new Node() { Header = i.ToString() });
+                n = n.SubNodes[0];
+                nodeMap.Add(n.Header, n);
+            }
         }
 
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if(String.IsNullOrEmpty(txtItem.Text))
+            if (String.IsNullOrEmpty(txtItem.Text))
             {
-                MessageBox.Show("Node Name should not be blank","Error");
+                MessageBox.Show("Node Name should not be blank", "Error");
                 return;
             }
 
-            if(tvFoods.SelectedItem == null)
+            if (tvFoods.SelectedItem == null)
             {
                 nodes.Add(new Node() { Header = txtItem.Text });
                 return;
             }
-            
+
             Node n = tvFoods.SelectedItem as Node;
             if (n == null) return;
             n.SubNodes.Add(new Node() { Header = txtItem.Text });
@@ -86,11 +107,102 @@ namespace WPF_TreeView
 
         private ItemsControl SelectedItemParent = null;
         private void TreeViewItem_Selected(object sender, RoutedEventArgs e)
-        {            
+        {
             TreeViewItem item = e.OriginalSource as TreeViewItem;
             if (item == null) return;
             ItemsControl parent = ItemsControl.ItemsControlFromItemContainer(item);
-            SelectedItemParent = parent;         
+            SelectedItemParent = parent;
+        }
+
+        private void Button_FindItemClick(object sender, RoutedEventArgs e)
+        {   
+            string searchStr = tbSearchBox.Text;
+            if (!nodeMap.ContainsKey(searchStr))
+            {
+                MessageBox.Show($"Node node found: {searchStr}");
+                return;
+            }
+            
+            //Forces the Tree to be created (instead of virtual)
+            ExpandAll(tvNumbers);
+            CollapseAll(tvNumbers);
+
+            Node n = nodeMap[searchStr];            
+            TreeViewItem tvNode = GetTreeViewItem(tvNumbers, n);
+            if (tvNode == null)
+            {
+                MessageBox.Show($"Node node found: {searchStr}");
+                return;
+            }
+            tvNode.IsSelected = true;
+            tvNode.IsExpanded = false;
+            tvNode.BringIntoView();
+        }
+
+        private TreeViewItem GetTreeViewItem(ItemsControl container, object item)
+        {
+            if (container == null) return null;
+            if (container.DataContext == item)
+                return container as TreeViewItem;
+
+            // Expand the current container
+            if (container is TreeViewItem && !((TreeViewItem)container).IsExpanded)
+                container.SetValue(TreeViewItem.IsExpandedProperty, true);
+
+            // Try to generate the ItemsPresenter and the ItemsPanel.
+            // by calling ApplyTemplate.  Note that in the
+            // virtualizing case even if the item is marked
+            // expanded we still need to do this step in order to
+            // regenerate the visuals because they may have been virtualized away.
+            container.ApplyTemplate();
+            ItemsPresenter itemsPresenter =
+                (ItemsPresenter)container.Template.FindName("ItemsHost", container);
+            if (itemsPresenter != null)
+            {
+                itemsPresenter.ApplyTemplate();
+            }            
+
+
+            for (int i = 0, count = container.Items.Count; i < count; i++)
+            {
+                TreeViewItem subContainer = container.ItemContainerGenerator.ContainerFromIndex(i) as TreeViewItem;
+                if (subContainer == null) continue;
+                //subContainer.IsExpanded = true;
+                subContainer.BringIntoView();
+
+                //Recurses through the nodes                
+                TreeViewItem resultContinaer = GetTreeViewItem(subContainer, item);
+                if (resultContinaer != null)
+                    return resultContinaer;
+                //else subContainer.IsExpanded = false;
+            }
+            return null;
+        }
+
+        private void TreeViewItem_Expanded(object sender, RoutedEventArgs e)
+        {
+            TreeViewItem item = sender as TreeViewItem;
+            item.IsExpanded = true;
+            item.IsSelected = true;         
+        }
+
+        private void Button_ClickExpandAll(object sender, RoutedEventArgs e)
+        {
+            ExpandAll(tvNumbers);            
+        }
+
+        private void ExpandAll(TreeView tv)
+        {
+            foreach (object o in tv.Items)
+                if (tv.ItemContainerGenerator.ContainerFromItem(o) is TreeViewItem tvItem)
+                    tvItem.ExpandSubtree();
+        }
+
+        private void CollapseAll(TreeView tv)
+        {
+            foreach(object o in tv.Items)
+                if(tv.ItemContainerGenerator.ContainerFromItem(o) is TreeViewItem sub)
+                    sub.IsExpanded = false; ;
         }
     }
     public class Family
@@ -110,12 +222,5 @@ namespace WPF_TreeView
     {
         public string Name { get; set; }
         public int Age { get; set; }
-    }
-
-    public class Node
-    {
-        public string Header { get; set; }
-
-        public ObservableCollection<Node> SubNodes { get; set; } = new ObservableCollection<Node>();        
     }
 }
